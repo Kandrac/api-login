@@ -1,0 +1,23 @@
+{
+  "webServer": {
+    "port": 8080,
+    "oidc": {
+      "clientId": "0oak04afriXrS3c5d356",
+      "clientSecret": "I-h_Gvqu8a6pen-EgFqnnDn6hU73DOGzo4evxxwV",
+      "issuer": "https://dev-502059.okta.com",
+      "appBaseUrl": "http://localhost:8080",
+      "scope": "openid profile email"
+    }
+  },
+  "resourceServer": {
+    "port": 8000,
+    "oidc": {
+      "clientId": "{clientId}",
+      "issuer": "https://{yourOktaDomain}.com/oauth2/default"
+    },
+    "assertClaims": {
+      "aud": "api://default",
+      "cid": "{clientId}"
+    }
+  }
+}
